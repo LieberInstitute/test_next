@@ -6,4 +6,4 @@ rm -fr .nextflow work
 
 module load java/1.8.0
 export _JAVA_OPTIONS="-Xms3g -Xmx5g"
-nextflow main.nf -profile sge -with-report test_report.html -with-trace -with-timeline test_timeline.html -with-dag test_flowchart.png
+nextflow main.nf -profile sge -with-report test_report.html -with-trace -with-timeline test_timeline.html -with-dag test_flowchart.png -w /dcl01/lieber/ajaffe/lab/test_next/test_w_option
